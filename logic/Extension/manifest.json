@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "Web browser extension to detect phishing URL address by heuristic rules v1",
+  "description": "Master thesis",
+  "version": "1.0",
+  "icons": { 
+        "16": "phishing.png",
+        "48": "phishing.png",
+        "128": "phishing.png" 
+   },
+  "background": {
+        "scripts": ["extensionListener.js"]
+   },
+  "permissions": ["storage","notifications"],
+  "content_scripts": [
+      {
+        "matches": [
+          "<all_urls>"
+        ],
+        "js": ["jquery-3.6.0.min.js", "logic.js"]
+      }
+   ],
+   "browser_action": {
+    "default_icon": "warning.png",
+    "default_popup": "index.html"
+  }  
+}
+
+
