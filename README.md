@@ -35,6 +35,10 @@ isIframePresent() (-1|+1)
 getIdenticalDomainCount() (returns IdenticalDomainCount number)
 ```
 
+Phishing URL web detection based on weight implemented in web browser extensions:
+
+![Screenshot](image.png)
+
 This repository contains the source codes for the master thesis. 
 
 Directory `logic/` contains the source code for 1st
